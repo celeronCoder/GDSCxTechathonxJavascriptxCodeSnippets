@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hello World</title>
+</head>
+
+<body>
+	<button id="btn">Say Hello</button>
+
+	<script>
+		// using getElementById
+		var btn = document.getElementById("btn");
+
+		// using querySelector
+		// var btn = document.querySelector("#btn");
+		// var btn = document.querySelector(".class");
+
+		btn.addEventListener("click", function () {
+			// the variable
+			var msg = "Hello World";
+
+			// with an alert
+			alert("Hello World!");
+			// alert(msg);
+
+			// with log
+			console.log("Hello World");
+			// console.log(msg);
+		})
+
+		addEventListener("load", function () {
+			alert("Hey from the load listener")
+		})
+	</script>
+</body>
+
+</html>
